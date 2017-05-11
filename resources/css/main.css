@@ -1,4 +1,5 @@
 /* TODO: Add backup fonts */
+/* TODO: Fix viewport for ipad and ipad pro */
 
 body {
   font-family: "avenir next"
@@ -18,7 +19,7 @@ h4 {
 
   background-image: url("../images/woman2.png");
   background-size: cover;
-  height: 69vh;
+  height: 91vh;
 }
 
 .jumbotron a {
@@ -33,11 +34,20 @@ h4 {
   background-color: rgba(0, 174, 239, .5);
   }
 
-.value-prop {
-  color: rgb(255, 255, 255);
-  position: absolute;
+.pos-rel {
+  position: relative;
 }
 
+.center {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -55%);
+}
+
+.jumbo-txt {
+  color: rgb(255, 255, 255);
+}
 .jumbo-subtxt {
   font-weight: 200;
 }
@@ -74,6 +84,10 @@ h4 {
 .card-title {
   color: black;
   font-weight: normal;
+}
+
+.breaker {
+  border-bottom: 1px solid black;
 }
 
 i {
@@ -126,11 +140,20 @@ a:hover i {
   color: #ebebeb;
 }
 
+@media (min-width: 576px) {
+  .jumbotron {
+    height: 84vh;
+  }
+}
+
 @media (min-width: 992px) {
   .card-title {
     text-align: center;
   }
-  .card-text {
-    /*margin: 0 auto;*/
+  .jumbotron {
+    height: 93vh;
+  }
+  .jumbo-txt {
+    font-size: 1.5em;
   }
 }
