@@ -45,17 +45,24 @@
 <!-- TODO: Hook up form -->
     <section class="intro">
       <div class="jumbotron  jumbotron-fluid p-0">
-        <div class="image-cover h-100 w-100">
-          <div class="container-fluid h-100">
-            <div class="row h-100">
-              <div class="col-12 align-self-center value-prop">
-                <h5 class="mb-0 text-center">Caregiving from a distance</h5>
-                <p class="jumbo-subtxt text-center">A simple way to manage, track, and pay for your loved one's medical needs.</p>
+        <div class="image-cover h-100">
+          <div class="container-fluid h-100 p-0">
+            <div class="d-flex flex-column align-items-center pos-rel h-100">
+              <div class="col center text-center">
+                <h5 class="jumbo-txt mb-0">Caregiving from a distance</h5>
+                <p class="jumbo-txt jumbo-subtxt">A simple way to manage, track, and pay for your loved one's medical needs.</p>
               </div>
-              <div class="col-12 align-self-end text-center">
+              <div class="mt-auto mb-2"><button class="btn btn-secondary" type="button" id="learn">Sign up</button><a href="#about" class="ml-2">or Learn More</a></div>
+            </div>
+            <!-- <div class="row align-items-center justify-content-center h-100" style="border: solid red">
+              <div class="text-center" style="border: solid black">
+                <h5 class="mb-0">Caregiving from a distance</h5>
+                <p class="jumbo-subtxt">A simple way to manage, track, and pay for your loved one's medical needs.</p>
+              </div>
+              <div class="align-self-end text-center mt-0" style="border: solid black">
                 <button class="btn btn-secondary mb-3" type="button" id="learn">Sign up</button><a href="#about" class="ml-2">or Learn More</a>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -101,7 +108,7 @@
         <div class="row justify-content-center mt-2 no-gutters">
           <div class="col-xs-12 col-md-4">
             <div class="card border-0">
-              <i class="fa fa-mobile fa-5x mx-auto" aria-hidden="true"></i>
+              <i class="fa fa-mobile fa-5x text-center" aria-hidden="true"></i>
               <div class="card-block">
                 <h4 class="card-title">Arrange for services</h4>
                 <p class="card-text">Using any computer or mobile device, signup and enroll as many friends and family members as you want. Once a person is enrolled easily arrange for medical services from a network of qualified professionals.</p>
@@ -111,7 +118,7 @@
           </div>
           <div class="col-x-12 col-md-4 mt-3">
             <div class="card border-0">
-              <i class="fa fa-envelope-o fa-3x mx-auto" aria-hidden="true"></i>
+              <i class="fa fa-envelope-o fa-3x text-center" aria-hidden="true"></i>
               <div class="card-block mt-3">
                   <h4 class="card-title">Stay up to date</h4>
                   <p class="card-text">Receive notifications for important health events such as completed doctor's visits and prescription refills. </p>
@@ -121,7 +128,7 @@
           </div>
           <div class="col-xs-12 col-md-4 mt-3">
             <div class="card border-0">
-              <i class="fa fa-credit-card fa-3x mx-auto" aria-hidden="true"></i>
+              <i class="fa fa-credit-card fa-3x text-center" aria-hidden="true"></i>
               <div class="card-block mt-3">
                 <h4 class="card-title">Pay directly</h4>
                 <p class="card-text">Remove the need to wire cash by securely and directly paying medical providers through the online portal. You only pay for services actually delivered.</p>
@@ -134,17 +141,17 @@
 
     <section class="location">
       <div class="container py-3">
-        <div class="row justify-content-center">
-          <div class="col-2 col-md-2">
+        <div class="d-flex">
+          <div class="ml-auto">
             <i class="fa fa-map-marker fa-4x" aria-hidden="true"></i>
           </div>
-          <div class="col-10 col-md-5">
+          <div class="ml-4 mr-auto">
             <h6>DiaspoCare beta is currently live in <span class="locale">Lagos, Nigeria</span>.</h6>
             <p>Request DiaspoCare in your city</p>
           </div>
         </div>
         <div class="row justify-content-md-center">
-          <div class="col-12 col-md-7">
+          <div class="col-12 col-md-5">
             <form>
               <div class="form-group mb-0">
                 <label class="sr-only"></label>
@@ -183,7 +190,6 @@
         </div>
 
 <!-- TODO: Link to appropriate site -->
-<!-- TODO: Add media query to adjust size of circle based on screen size -->
         <div class="row d-flex justify-content-center mt-5">
           <div class="col-8 d-flex justify-content-center icons-container social-icon pb-3">
             <a href="#" class="social-icon-box rounded-circle d-flex justify-content-center align-items-center mr-4"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -202,7 +208,7 @@
     <!-- Modals -->
     <section>
       <div class="modal fade" id="terms" tabindex="-1" role="dialog" aria-labelledby="terms" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="terms">Terms and conditions</h5>
@@ -220,7 +226,7 @@
         </div>
       </div>
       <div class="modal fade" id="privacy" tabindex="-1" role="dialog" aria-labelledby="privacy" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
               <h5 class="modal-title" id="terms">Privacy policy</h5>
